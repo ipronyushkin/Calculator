@@ -76,7 +76,8 @@ namespace Calculator
                     counter++;
                 }
             }
-            
+            var separator = System.Globalization.CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator[0];
+            res = res.Replace( ',' , separator);
             return Convert.ToDouble(res) * sign;
         }
     }

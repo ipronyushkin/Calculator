@@ -18,3 +18,13 @@ C:\Users\prona\Source\Repos\Calculator\Calculator\obj\Debug\Calculator.csproj.Co
 C:\Users\prona\Source\Repos\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\prona\Source\Repos\Calculator\Calculator\obj\Debug\Calculator.pdb
 C:\C#\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+C:\Users\prona\RiderProjects\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\prona\RiderProjects\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\prona\RiderProjects\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\prona\RiderProjects\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+C:\Users\prona\RiderProjects\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+C:\Users\prona\RiderProjects\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\prona\RiderProjects\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+C:\Users\prona\RiderProjects\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\prona\RiderProjects\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\prona\RiderProjects\Calculator\Calculator\obj\Debug\Calculator.pdb
