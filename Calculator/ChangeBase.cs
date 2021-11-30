@@ -53,6 +53,7 @@ namespace Calculator
             catch
             {
                 Form1._Form1.update("Результат является слишком большим числом :(");
+                return 0;
             }
             var r = 0;
             var res = "";
