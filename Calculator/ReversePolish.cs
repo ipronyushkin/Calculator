@@ -78,7 +78,7 @@ namespace Calculator
             switch (operation)
             {
                 case "*":
-                    res = ToBase10(y) * ToBase10(x);
+                    res = y * x;
                     break;
                 case "/":
                     if (x == 0)
@@ -86,19 +86,21 @@ namespace Calculator
                        Form1._Form1.update("На ноль делить нельзя!");
                        break;
                     }
-                    res = ToBase10(y) / ToBase10(x);
+                    res = y / x;
                     break;
                 case "+":
-                    res = ToBase10(y) + ToBase10(x);
+                    res = y + x;
                     break;
                 case "-":
-                    res = ToBase(y) - ToBase10(x);
+                    res = y - x;
                     break;
             }
+            //Form1._Form1.update(res.ToString());
             return res;
         }
         
-        public static double calculation(string[] symbols){    
+        public static double calculation(string[] symbols)
+        {
             var stack = new Stack<double>();           
             foreach (var t in symbols)
             {
@@ -109,6 +111,7 @@ namespace Calculator
                 }
                 else if (is_number(t)) {
                     var tmp = double.Parse(t);
+                    tmp = ToBase10(tmp);
                     stack.Push(tmp);
                 }
             }

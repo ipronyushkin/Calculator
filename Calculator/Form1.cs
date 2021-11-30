@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Calculator.Properties;
 
 
 namespace Calculator
@@ -263,6 +257,7 @@ namespace Calculator
             bracket_flag = false;
             operation_flag = false;
             bracket_counter = 0;
+            foreach (Control c in Controls) c.Enabled = true;
         }
 
         // button2_Click - "<-"
@@ -339,11 +334,21 @@ namespace Calculator
                 update("Количество открывающихся скобок больше количества закрывающихся!");
                 return;
             }
+            
             if (bracket_flag != true) 
                 label1.Text += textBox1.Text;
+            
             textBox1.Text = calculate().ToString();
             label1.Text += " = ";
-
+            
+            foreach (Control c in Controls)
+            {
+                //Button b = c as Button;
+                if (c.Name != "button1")
+                {
+                    c.Enabled = false;
+                }
+            }
         }
     }
 }
